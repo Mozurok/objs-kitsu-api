@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,900&display=swap');
+:root {
+    --width-base: 1280px;
+    --width-mobile-base: 100%;
+    --red-color-base: #d42025;
+    --color-font-base: #D42026;
+    --color-font-list: #4E4E4E;
+    --color-red-opacity: rgba(212, 32, 37, 0.1);
+    --color-red-button-opacity: rgba(210, 10, 10, 0.35);
+    --color-red-button-pag: #D20A0A;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+}

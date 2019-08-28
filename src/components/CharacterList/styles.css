@@ -1,0 +1,217 @@
+@import "/src/base.css";
+
+.listContainer{
+    margin: 0 42px 0 42px;
+}
+
+.listHeader{
+    display: flex;
+}
+
+.firstHeader{
+    width: 25%;
+    height: 37px;
+    background-color: var(--red-color-base);
+    color: #fff;
+    font-size: 16px;
+    align-items: center;
+    display: flex;
+    padding-left: 10px;
+}
+
+.secondHeader{
+    margin-left: 10px;
+    height: 37px;
+    background-color: var(--red-color-base);
+    color: #fff;
+    font-size: 16px;
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+    padding-left: 10px;
+}
+
+
+.listItems{
+    display: flex;
+    width: 100%;
+    border-bottom: 3px solid var(--color-red-opacity);
+}
+
+.listItems:hover{
+    background-color: var(--color-red-opacity);
+    cursor: pointer;
+}
+
+.avatarImg{
+    width: 54px;
+    height: 54px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+}
+
+.avatarName{
+    margin-left: 25px;
+}
+
+.divAvatar{
+    align-items: center;
+    display: flex;
+}
+
+.firstItem{
+    height: 112px;
+    width: 25%;
+    padding: 20px 0 20px 10px;
+    display: flex;
+    align-items: center;
+    color: var(--color-font-list);
+}
+
+.secondItem{
+    flex-grow: 1;
+    height: 112px;
+    margin-left: 10px;
+    padding: 20px 10px 20px 10px;
+    color: var(--color-font-list);
+    display: flex;
+    align-items: center;
+    width: min-content;
+}
+
+.paginationContainer{
+    margin-top: 16px;
+}
+
+.paginationUl{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.paginationLiBack{
+    margin-right: 12px;
+    border-style: solid;
+    border-width: 8px 6px;
+    cursor: pointer;
+    border-color: transparent var(--color-red-button-pag) transparent transparent;
+}
+
+.paginationLiBackDisabled{
+    border-color: transparent var(--color-red-button-opacity) transparent transparent;
+}
+
+.paginationLiNext{
+    margin-left: 12px;
+    border-style: solid;
+    border-width: 8px 6px;
+    cursor: pointer;
+    border-color: transparent transparent transparent var(--color-red-button-pag);
+}
+
+.paginationLiItem{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    border: 1px solid var(--red-color-base);
+    align-items: center;
+    justify-content: center;
+    color: var(--color-font-base);
+    margin-right: 20px;
+    font-size: 21px;
+}
+
+.paginationLiItemLast{
+    font-size: 21px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-font-base);
+    border: 1px solid var(--red-color-base);
+}
+
+.paginationHover:hover{
+    color: #fff;
+    cursor: pointer;
+    background-color: var(--red-color-base);
+}
+
+.paginationLiItemActive{
+    color: #fff;
+    cursor: pointer;
+    background-color: var(--red-color-base);
+}
+
+.divSearchInput{
+    margin: 34px 42px 34px 42px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.labelSearch{
+    width: 100%;
+    font-size: 16px;
+    color: var(--color-font-base);
+}
+
+.inputSearch{
+    width: 400px;
+    border: 1px solid #A5A5A5;
+    border-radius: 4px;
+    color: #222;
+    padding-left: 5px;
+    height: 31px;
+}
+
+@media (max-width: 360px) {
+    .divSearchInput{
+        margin: 0;
+        padding: 12px 24px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .firstHeader{
+        width: 100%;
+        padding-left: 90px;
+    }
+    .firstItem{
+        width: 100%;
+        padding: 12px;
+        height: 56px;
+    }
+    .secondItem{
+        display: none;
+    }
+
+    .secondHeader{
+        display: none;
+    }
+
+    .listContainer{
+        margin: 0;
+    }
+    .only-lg{
+        display: none;
+    }
+
+}
+
+.imgSpinLoader{
+    margin: 34px;
+    width: 50px;
+    -webkit-animation:spin 1s linear infinite;
+    -moz-animation:spin 1s linear infinite;
+    animation:spin 1s linear infinite;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }

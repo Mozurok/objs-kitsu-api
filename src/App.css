@@ -1,33 +1,72 @@
-.App {
-  text-align: center;
+@import "base.css";
+
+.container{
+  width: var(--width-base);
+  margin-right: auto;
+  margin-left: auto;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+footer{
+  height: 12px;
+  margin-top: 16px;
+  background-color: var(--red-color-base);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav{
+  margin: 20px 42px 0 42px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.spanFirstTitle{
+  color: var(--color-font-base);
+  font-size: 27px;
+  font-weight: bold;
+}
+.spanFirstTitleSub{
+  color: var(--color-font-base);
+  font-size: 27px;
+  font-weight: lighter;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.spanMyName{
+  color: var(--color-font-base);
+  font-size: 27px;
+  font-weight: lighter;
 }
+
+@media (max-width: 360px) {
+    .container{
+    width: var(--width-mobile-base);
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  nav{
+    margin: 12px 24px 0 24px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .spanFirstTitle{
+    color: var(--color-font-base);
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .spanFirstTitleSub{
+    color: var(--color-font-base);
+    font-size: 16px;
+    font-weight: lighter;
+  }
+
+  .spanMyName{
+    display: none;
+    color: var(--color-font-base);
+    font-size: 16px;
+    font-weight: lighter;
+  }
+
+
+}
+
