@@ -1,0 +1,62 @@
+@import "/src/base.css";
+
+.listItemsMedia{
+    display: flex;
+    width: 100%;
+    border-bottom: 3px solid var(--color-red-opacity);
+}
+
+.mediaImg{
+    width: 108px;
+    height: 108px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 25%;
+}
+
+.avatarName{
+    margin-left: 25px;
+}
+
+.divAvatar{
+    align-items: center;
+    display: flex;
+}
+
+.firstItem{
+    height: 112px;
+    width: 25%;
+    padding: 20px 0 20px 10px;
+    display: flex;
+    align-items: center;
+    color: var(--color-font-list);
+}
+
+.secondItem{
+    flex-grow: 1;
+    height: 112px;
+    margin-left: 10px;
+    padding: 20px 10px 20px 10px;
+    color: var(--color-font-list);
+    display: flex;
+    align-items: center;
+    width: min-content;
+}
+
+@media (max-width: 360px) {
+    .firstItem{
+        width: 100%;
+        padding: 12px;
+        height: 56px;
+    }
+    .secondItem{
+        display: none;
+    }
+    .mediaImg{
+        width: 54px;
+        height: 54px;
+        object-fit: cover;
+        object-position: top;
+        border-radius: 25%;
+    }
+}

@@ -27,10 +27,10 @@ export function handlerGetInitialList(query) {
       offset = 0;
     }
     axios.get(`${urlApi}/characters?page[offset]=${offset}`)
-      .then(function (res) {
+      .then((res) => {
         return dispatch(getInitialList(res));
       })
-      .catch(function (error) {
+      .catch((error) => {
         console.log(error);
       });
   }
@@ -53,7 +53,6 @@ export function handlerGetCharacterByName(query) {
     dispatch(setLoading());
     axios.get(`${urlApi}/characters?filter[name]=${query.name}&page[offset]=${offset}`)
       .then(function (res) {
-        console.log(res);
         return dispatch(getCharacterByName(res));
       })
       .catch(function (error) {

@@ -26,7 +26,7 @@ class App extends Component {
             <Route path={'/search/:text/page/:number'} component={CharacterList}/>
             <Route path={'/page/:number'} component={CharacterList}/>
             <Route path={'/search/:text'} component={CharacterList}/>
-            <Route path={'/details/:name'} exact component={CharacterDetails}/>
+            <Route path={'/details/:id/:name'} exact component={CharacterDetails}/>
             <Route component={NoMatch}/>
           </Switch>
         </Router>
